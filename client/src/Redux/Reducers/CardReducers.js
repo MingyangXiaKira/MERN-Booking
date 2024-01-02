@@ -1,4 +1,4 @@
-import * as Types from '../Constants/AllConstants';
+import * as Types from "../Constants/AllConstants";
 
 // get all cards
 export const getAllCardsReducer = (

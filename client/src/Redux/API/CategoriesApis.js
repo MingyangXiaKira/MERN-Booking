@@ -1,10 +1,11 @@
-import axios from 'axios';
+import axios from "axios";
 
 // ************ PUBLIC APIs ************
 
 // get all categories
 const getCategoriesService = async () => {
-  const { data } = await axios.get('/api/categories');
+  const baseUrl = process.env.REACT_APP_API_URL;
+  const { data } = await axios.get(`${baseUrl}/api/categories`);
   return data;
 };
 

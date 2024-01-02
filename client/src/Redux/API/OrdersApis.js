@@ -1,10 +1,10 @@
-import axios from 'axios';
+import axios from "axios";
 
 // ************ PRIVATE APIs ************
-
+const baseUrl = process.env.REACT_APP_API_URL;
 // get all orders
 const getAllOrders = async (token) => {
-  const { data } = await axios.get(`/api/orders`, {
+  const { data } = await axios.get(`${baseUrl}/api/orders`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -14,7 +14,7 @@ const getAllOrders = async (token) => {
 
 // get order by id
 const getOrderById = async (id, token) => {
-  const { data } = await axios.get(`/api/orders/${id}`, {
+  const { data } = await axios.get(`${baseUrl}/api/orders/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -24,7 +24,7 @@ const getOrderById = async (id, token) => {
 
 // create order
 const createOrder = async (order, token) => {
-  const { data } = await axios.post(`/api/orders`, order, {
+  const { data } = await axios.post(`${baseUrl}/api/orders`, order, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -34,7 +34,7 @@ const createOrder = async (order, token) => {
 
 // delete order
 const deleteOrder = async (id, token) => {
-  const { data } = await axios.delete(`/api/orders/${id}`, {
+  const { data } = await axios.delete(`${baseUrl}/api/orders/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -44,7 +44,7 @@ const deleteOrder = async (id, token) => {
 
 // delete all orders
 const deleteAllOrders = async (token) => {
-  const { data } = await axios.delete(`/api/orders`, {
+  const { data } = await axios.delete(`${baseUrl}/api/orders`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -54,7 +54,7 @@ const deleteAllOrders = async (token) => {
 
 // checkout from stripe
 const stripePayment = async (datas, token) => {
-  const { data } = await axios.post(`/api/orders/checkout`, datas, {
+  const { data } = await axios.post(`${baseUrl}/api/orders/checkout`, datas, {
     headers: {
       Authorization: `Bearer ${token}`,
     },

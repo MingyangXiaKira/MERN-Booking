@@ -1,70 +1,70 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const { userInfo } = useSelector((state) => state.userLogin);
   const Links = [
     {
-      title: 'Company',
+      title: "Company",
       links: [
         {
-          link: '/about-us',
-          name: 'About Us',
+          link: "/about-us",
+          name: "About Us",
         },
         {
-          link: '/faq',
-          name: 'FAQ',
+          link: "/faq",
+          name: "FAQ",
         },
         {
-          link: '/policy',
-          name: 'Policy',
+          link: "/policy",
+          name: "Policy",
         },
         {
-          link: '/terms-condition',
-          name: 'Condition',
+          link: "/terms-condition",
+          name: "Condition",
         },
       ],
     },
     {
-      title: 'Top Category',
+      title: "Top Category",
       links: [
         {
-          link: '#',
-          name: 'Men Outfit',
+          link: "#",
+          name: "Men Outfit",
         },
         {
-          link: '#',
-          name: 'Shoes',
+          link: "#",
+          name: "Shoes",
         },
         {
-          link: '#',
-          name: 'Women Outfit',
+          link: "#",
+          name: "Women Outfit",
         },
         {
-          link: '#',
-          name: 'Swimwear',
+          link: "#",
+          name: "Swimwear",
         },
       ],
     },
     {
-      title: 'My Account',
+      title: "My Account",
       links: [
         {
-          link: userInfo ? '/dashboard' : '/registation',
-          name: 'Dashboard',
+          link: userInfo ? "/dashboard" : "/registation",
+          name: "Dashboard",
         },
         {
-          link: userInfo ? '/orders' : '/registation',
-          name: 'My Orders',
+          link: userInfo ? "/orders" : "/registation",
+          name: "My Orders",
         },
         {
-          link: userInfo ? '/profile' : '/registation',
-          name: 'Updated Profile',
+          link: userInfo ? "/profile" : "/registation",
+          name: "Updated Profile",
         },
         {
-          link: userInfo ? '/password' : '/registation',
-          name: 'Change Password',
+          link: userInfo ? "/password" : "/registation",
+          name: "Change Password",
         },
       ],
     },
@@ -106,13 +106,12 @@ function Footer() {
             </Link>
             <p className="leading-7 font-sans text-sm text-gray-600 mt-3">
               <span>
-                987 Andre Plain Suite High Street 838, <br /> Lake Hestertown,
-                Tanzania
+                Dublin <br /> Ireland
               </span>
               <br />
-              <span>Tell: +255 762 352 746</span>
+              <span>Tell: *********</span>
               <br />
-              <span>Email: minahmmassy@gmail.com</span>
+              <span>Email: mingyangxia.career@gmail.com</span>
             </p>
           </div>
         </div>

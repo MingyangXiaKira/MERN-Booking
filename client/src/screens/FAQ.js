@@ -1,43 +1,43 @@
-import React from 'react';
-import Head from '../components/Head';
-import Layout from '../layout/Layout';
-import { Disclosure } from '@headlessui/react';
-import { FiChevronUp } from 'react-icons/fi';
+import React from "react";
+import Head from "../components/Head";
+import Layout from "../layout/Layout";
+import { Disclosure } from "@headlessui/react";
+import { FiChevronUp } from "react-icons/fi";
 
 function FAQPage() {
   const FAQData = [
     {
-      title: 'How does the OnlineShop Market work?',
-      desc: ' Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.',
+      title: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
+      desc: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
     },
     {
-      title: 'Can I cancel my subscription anytime?',
-      desc: 'Distinctively initiate error-free channels with highly efficient ROI. Intrinsicly envisioneer world-class data via best-of-breed best practices. Efficiently enable empowered e-tailers after cross-unit services. Uniquely expedite seamless e-tailers via cooperative interfaces. Monotonectally myocardinate customer directed meta-services whereas error-free scenarios.',
+      title: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
+      desc: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
     },
     {
-      title: 'Whice payment method you should accept?',
-      desc: ' Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.',
+      title: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
+      desc: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
     },
     {
-      title: 'Can I cancel my subscription anytime?',
-      desc: ' Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.',
+      title: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
+      desc: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
     },
     {
-      title: 'What is OnlineShop Market EC2 auto scaling?',
-      desc: ' Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.',
+      title: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
+      desc: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
     },
     {
-      title: ' What are the benefits of using OnlineShop Market affliate?',
-      desc: ' Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.',
+      title: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
+      desc: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
     },
     {
-      title: 'What is a affliates product configuration?',
-      desc: ' Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.',
+      title: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
+      desc: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
     },
     {
-      title:
-        'What is fleet management and how is it different from dynamic scaling?',
-      desc: ' Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.',
+      title: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
+
+      desc: " Ut sint ipsum minim incididunt fugiat culpa aliquip.",
     },
   ];
   return (
@@ -56,7 +56,7 @@ function FAQPage() {
                           <span>{q.title}</span>
                           <FiChevronUp
                             className={`${
-                              open ? 'transform rotate-180 text-main' : ''
+                              open ? "transform rotate-180 text-main" : ""
                             } w-5 h-5 text-gray-500`}
                           />
                         </Disclosure.Button>

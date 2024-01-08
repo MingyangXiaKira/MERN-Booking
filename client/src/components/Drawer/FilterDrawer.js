@@ -1,11 +1,11 @@
-import React, { useContext, useMemo, useState } from 'react';
-import MainDrawer from './MainDrawer';
-import { Link } from 'react-router-dom';
-import { IoClose } from 'react-icons/io5';
-import Filter from '../Filter';
-import { useDispatch, useSelector } from 'react-redux';
-import { getCardsAction } from '../../Redux/Actions/CardAction';
-import { SidebarContext } from '../../Context/PopUpContex';
+import React, { useContext, useMemo, useState } from "react";
+import MainDrawer from "./MainDrawer";
+import { Link } from "react-router-dom";
+import { IoClose } from "react-icons/io5";
+import Filter from "../Filter";
+import { useDispatch, useSelector } from "react-redux";
+import { getCardsAction } from "../../Redux/Actions/CardAction";
+import { SidebarContext } from "../../Context/PopUpContex";
 
 function FilterDrawer({ filterDrawerOpen, toggleFilterDrawer }) {
   const { setSearchValue, searchValue } = useContext(SidebarContext);
@@ -23,10 +23,10 @@ function FilterDrawer({ filterDrawerOpen, toggleFilterDrawer }) {
   // queries
   const queries = useMemo(() => {
     const query = {
-      search: searchValue ? searchValue : '',
-      category: category?.value ? category?.value : '',
-      sort: published?.value ? published?.value : '',
-      tag: tag?.value ? tag?.value : '',
+      search: searchValue ? searchValue : "",
+      category: category?.value ? category?.value : "",
+      sort: published?.value ? published?.value : "",
+      tag: tag?.value ? tag?.value : "",
     };
     return query;
   }, [category, published, tag, searchValue]);
@@ -43,16 +43,16 @@ function FilterDrawer({ filterDrawerOpen, toggleFilterDrawer }) {
     setCategory({});
     setTag({});
     setPageNumber(1);
-    setSearchValue('');
+    setSearchValue("");
     states?.setActivePublish(null);
     states?.setActiveTag(null);
     states?.setActiveCategory(null);
     dispatch(
       getCardsAction({
-        search: '',
-        category: '',
-        sort: '',
-        tag: '',
+        search: "",
+        category: "",
+        sort: "",
+        tag: "",
         pageNumber: 1,
       })
     );
@@ -67,7 +67,7 @@ function FilterDrawer({ filterDrawerOpen, toggleFilterDrawer }) {
             <Link onClick={toggleFilterDrawer} to="/">
               <img
                 className="w-40 h-40 object-contain"
-                src="/images/logo.png"
+                src="/images/logo.WebP"
                 alt="logo"
               />
             </Link>

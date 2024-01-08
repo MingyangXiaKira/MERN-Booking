@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function Head({ title }) {
   return (
     <div className="w-full my-8 md:my-12 bg-deepGray lg:h-64 h-40 relative overflow-hidden rounded-md">
       <img
         alt="headImage"
-        src="/images/head.png"
+        src="/images/head.WebP"
         className="w-full h-full object-cover"
       />
       <div className="flex-colo w-full absolute lg:top-24 top-16">

@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Promos() {
   return (
     <div className="bg-deepest rounded-xl pt-20 lg:py-2 grid lg:grid-cols-2 gap-6">
       <div className="flex lg:text-start text-center flex-col items-center lg:px-0 px-4 sm:px-12 lg:items-start gap-4 lg:pl-24 lg:py-20">
         <h1 className="text-2xl font-medium">
-          Still looking for the best{' '}
+          Still looking for the best{" "}
           <span className="text-main font-semibold">
             Online Shopping Store?
           </span>
@@ -26,11 +26,13 @@ function Promos() {
           GET STARTED
         </Link>
       </div>
-      <div className="flex-colo">
+      <div className="w-full sm:h-72">
         <img
-          src="/images/promo.png"
+          src="/images/promo.WebP"
           alt="promo"
-          className="w-full sm:h-72 object-contain"
+          className="object-contain"
+          width="800"
+          height="600"
         />
       </div>
     </div>

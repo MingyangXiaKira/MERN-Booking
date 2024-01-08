@@ -100,7 +100,7 @@ function Footer() {
             <Link to="/">
               <img
                 className="w-2/4 object-contain h-12"
-                src="/images/logo.png"
+                src="/images/logo.WebP"
                 alt="logo"
               />
             </Link>

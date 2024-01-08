@@ -61,7 +61,7 @@ function AboutUs() {
               <div className="mt-10 lg:mt-0">
                 <img
                   className="w-full  md:h-[600px] rounded shadow object-cover"
-                  src="/images/about.jpeg"
+                  src="/images/about.WebP"
                   alt="logo"
                 />
               </div>
